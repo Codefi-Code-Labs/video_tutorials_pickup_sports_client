@@ -1,0 +1,82 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #add8e6;
+  padding: 0.5rem 1rem;
+  position: sticky;
+  top: 0;
+  width: 100%;
+}
+
+.navbar .brand-name {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+  padding-left: 0.5rem;
+}
+
+.navbar .nav-links a {
+  color: #333;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  transition: background-color 0.3s ease-in-out;
+  cursor:pointer;
+}
+
+.navbar .nav-links a:hover,
+.navbar .nav-links a.active {
+  color: white;
+  background-color: #ffa500;
+  border-radius: 4px;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.menu-container{
+  transition: width 0.3s ease;
+  width: 2rem;
+}
+
+.menu-container.active{
+  width: 275px;
+}
+
+.menu {
+  cursor: pointer;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 2rem;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: -250px;
+  width: 250px;
+  height: 100%;
+  background: #fff;
+  border-left: 2px solid lightblue;
+  transition: right 0.3s ease;
+}
+
+.sidebar.active{
+  right: 0px;
+}
+
+.sidebar a{
+  display: block;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+  color: #333; 
+  text-decoration: none;
+}
+
+.sidebar a:hover{
+  background-color: #f0f0f0;
+}
